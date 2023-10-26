@@ -26,3 +26,29 @@ let changeTheme =  ()=>{
 
 
 themeBtn.addEventListener('click',changeTheme)
+
+// tab
+
+
+let tabBtn=document.querySelectorAll('[data-tab-btn]');
+
+let [lastActiveTab]= document.querySelectorAll('[data-tab-content]')
+
+let [lastActiveBtn]=tabBtn
+
+
+tabBtn.forEach(item=>{
+    item.addEventListener('click',function(){
+        lastActiveTab.classList.remove('active');
+        lastActiveBtn.classList.remove('active');
+
+        let tabContent = document.querySelector(`[data-tab-content="${item.dataset.tabBtn}"]`);
+
+        tabContent.classList.add('active')
+
+        this.classList.add('active')
+
+        lastActiveTab=tabContent
+        lastActiveBtn=this;
+    })
+})
