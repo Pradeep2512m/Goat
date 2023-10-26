@@ -456,6 +456,35 @@ body{
 }
 
 
+[data-theme="dark"] .logo .light,
+[data-theme="light"] .logo .dark{
+  display: none;
+}
+[data-theme="dark"] .logo .dark,
+[data-theme="light"] .logo .light{
+  display: block;
+}
+
+.theme-btn{
+  color: var(--on-surface-variant);
+  --state-layer-bg: var(--on-surface-variant);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+
+[data-theme="dark"] .theme-btn .dark,
+[data-theme="light"] .theme-btn .light{
+  display: none;
+}
+
+
+
+
+
+
+
+
 
 /*-----------------------------------*\
   #HERO
