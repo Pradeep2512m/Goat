@@ -866,7 +866,13 @@ body{
   display: flex;
   align-items: center;
   gap: 12px;
+  
 }
+.contact-info-item a{
+  font-size: var(--font-secondary);
+
+}
+
 
 .contact-info .icon-box{
   width: 48px;
@@ -885,6 +891,7 @@ body{
 .info-title{
   color: var(--on-surface-variant);
   opacity: 0.6;
+  font-size: var(--font-primary);
 }
 
 .info-text{
