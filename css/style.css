@@ -412,6 +412,13 @@ body{
   aspect-ratio: var(--width) / var(--height);
   background-color: transparent;
   overflow: hidden;
+  border: 3px solid var(--primary);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.img-holder:hover{
+  transform: scale(1.03, 1.02);
 }
 
 
