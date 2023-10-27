@@ -770,6 +770,13 @@ body{
 
 .list-item a{
   color: var(--primary);
+  transition: all 0.3s;
+}
+.list-item a:hover{
+  color: var(--surface);
+  background-color: var(--primary);
+  border-radius: 50px;
+  padding: 5px;
 }
 
 
