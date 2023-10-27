@@ -921,6 +921,11 @@ body{
   border-radius: var(--radius-medium);
 }
 
+.edu-detail{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 /*-----------------------------------*\
   #FOOTER
