@@ -53,3 +53,17 @@ tabBtn.forEach(item=>{
     })
 })
 
+
+
+document.getElementById("send-button").addEventListener("click", function() {
+    // Get the values entered in the form fields
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    // Create the email subject using template literals
+    const subject = `Message from ${name} (${email})`;
+    
+    // Update the email subject in the anchor tag
+    const sendButton = document.getElementById("send-button");
+    sendButton.href = `mailto:navaneethanvs18@gmail.com?subject=${subject}`;
+  });
