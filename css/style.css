@@ -429,6 +429,46 @@ body{
 .section-title{
   margin-block-end: 1rem;
 }
+
+.project-description {
+  background-color: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  margin-inline: 16px;
+  padding: 16px;
+  border-radius: var(--radius-large);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-description p {
+  text-align: justify;
+}
+
+.project-viewer {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 1rem; */
+  margin: 12px;
+}
+
+.project-viewer a {
+  margin-right: 16px; 
+  padding: 8px; 
+  border-radius: 50px;
+  transition: all 0.3s ease; 
+}
+
+.project-viewer a:hover {
+  background-color: var(--primary); 
+  color: var(--surface); 
+}
+
+
+
+
 /*-----------------------------------*\
   #COMPONENT
 \*-----------------------------------*/
@@ -727,6 +767,10 @@ body{
   gap: 4px;
 }
 
+.list-item a{
+  color: var(--primary);
+}
+
 
 
 
@@ -876,11 +920,14 @@ body{
 \*-----------------------------------*/
 
 .footer .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1rem;
   border-block-start: 1px solid var(--outline-variant);
 }
-.footer .container a{
+.footer .container .list-item a{
   color: var(--primary);
 }
 
