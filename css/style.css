@@ -433,7 +433,7 @@ body{
 .project-description {
   background-color: var(--surface-container-low);
   color: var(--on-surface-variant);
-  margin-inline: 16px;
+  /* margin-inline: 16px; */
   padding: 16px;
   border-radius: var(--radius-large);
   display: flex;
@@ -455,6 +455,7 @@ body{
 }
 
 .project-viewer a {
+  color: var(--primary);
   margin-right: 16px; 
   padding: 8px; 
   border-radius: 50px;
