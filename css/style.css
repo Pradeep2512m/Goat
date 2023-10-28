@@ -499,7 +499,7 @@ body{
   height: 40px;
   display: grid;
   place-items: center;
-  padding-inline:24px;
+  padding-inline:20px;
   border-radius: var(--radius-full);
   background-color: var(--primary);
   color: var(--on-primary);
@@ -959,6 +959,7 @@ body{
 \*-----------------------------------*/
 
 .footer .container{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -966,11 +967,12 @@ body{
   padding: 1rem;
   border-block-start: 1px solid var(--outline-variant);
 }
-.footer .container .list-item a{
+.footer .container .list {
+  display: flex;
   color: var(--primary);
 }
 
-.footer .container .list-item .a:hover{
+.footer .container .list:hover{
   color: var(--on-surface);
   background: transparent;
 }
