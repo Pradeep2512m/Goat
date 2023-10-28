@@ -441,9 +441,8 @@ body{
 .project-description {
   background-color: var(--surface-container-low);
   color: var(--on-surface-variant);
-  /* margin-inline: 20px; */
-  padding: 20px;
-  /* margin-block-start: 24px; */
+  /* margin-inline: 16px; */
+  padding: 16px;
   border-radius: var(--radius-large);
   display: flex;
   flex-direction: column;
@@ -751,7 +750,7 @@ body{
   background-color: var(--surface-container-low);
   color: var(--on-surface-variant);
   margin-inline: 20px;
-  padding: 20px;
+  padding: 16px;
   margin-block-start: 24px;
   border-radius: var(--radius-large);
 }
@@ -769,7 +768,7 @@ body{
 
 .about-list{
   display: grid;
-  gap: 12px;
+  gap: 15px;
 }
 
 .list-item{
