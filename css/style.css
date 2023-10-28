@@ -985,6 +985,22 @@ body{
 
 
 
+@media screen and (max-width:768px) {
+  .project-description {
+    background-color: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    margin-inline:-5px;
+    padding: 16px;
+    border-radius: var(--radius-large);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--body-large);
+  }
+}
+
 /* screens larger than 768px*/
 
 @media (min-width:768px){
