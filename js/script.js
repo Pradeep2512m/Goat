@@ -55,6 +55,32 @@ tabBtn.forEach(item=>{
 
 
 
+
+// typing animation
+
+const titleElement = document.getElementById('developer-title');
+const titles = ["Front-End React Developer", "Web Developer"]; // Add other titles you want to cycle through
+let currentIndex = 0;
+
+function cycleTitles() {
+  const currentTitle = titles[currentIndex];
+  currentIndex = (currentIndex + 1) % titles.length;
+
+  typeText(currentTitle, 0);
+}
+
+function typeText(text, index) {
+  if (index <= text.length) {
+    titleElement.textContent = text.substring(0, index);
+    setTimeout(() => typeText(text, index + 1), 100); // Typing speed (adjust as needed)
+  } else {
+    setTimeout(cycleTitles, 2000); // Recurse to the next title every 4 seconds
+  }
+}
+
+cycleTitles(); // Start the cycling
+
+
 document.getElementById("send-button").addEventListener("click", function() {
     // Get the values entered in the form fields
     const name = document.getElementById("name").value;
@@ -67,3 +93,6 @@ document.getElementById("send-button").addEventListener("click", function() {
     const sendButton = document.getElementById("send-button");
     sendButton.href = `mailto:navaneethanvs18@gmail.com?subject=${subject}`;
   });
+
+
+

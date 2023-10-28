@@ -106,6 +106,7 @@
 }
 
 
+
 [data-theme="light"] {
 
   color-scheme: light;
@@ -448,6 +449,7 @@ body{
   justify-content: space-around;
   align-items: center;
   gap: 12px;
+  font-size: var(--body-large);
 }
 
 .project-description p {
@@ -968,6 +970,11 @@ body{
   color: var(--primary);
 }
 
+.footer .container .list-item .a:hover{
+  color: var(--on-surface);
+  background: transparent;
+}
+
 
 
 /*-----------------------------------*\
@@ -1042,3 +1049,29 @@ body{
   }
 }
 
+
+
+
+
+/* typing animation  */
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  color: var(--primary);
+  letter-spacing: 0.08; /* Adjust the spacing as needed */
+  animation: typing 3s steps(21, end), blink-caret .5s step-end infinite;
+  border-right: none; /* Remove the cursor */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
