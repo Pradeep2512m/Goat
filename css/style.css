@@ -799,7 +799,7 @@ body{
 
 .project-list{
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(260px, 1fr));
+  grid-template-columns: repeat(autofit, minmax(360px, 1fr));
   gap: 12px;
 }
 
